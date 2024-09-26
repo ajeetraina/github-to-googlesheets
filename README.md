@@ -1,4 +1,4 @@
-# github-to-googlesheets
+# A Python Script to import GitHub Repo into Google Sheets
 
 
 ## Table of Contents
