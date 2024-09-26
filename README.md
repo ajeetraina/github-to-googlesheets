@@ -28,12 +28,12 @@ Once created, navigate to the service account, and click Add Key > - Create New 
 - Select JSON as the key type and download the JSON file.
 
 
-## 3. Rename the JSON file:
+## Step 3. Rename the JSON file:
 
 - Move the downloaded JSON file to your project directory (where fetch.py is located).
 - Rename the file to something like google_creds.json (or any name you'd prefer).
 
-## 4. Update the script:
+## Step 4. Update the script:
 
 - Modify the file path in your Python script to match the new credentials file:
 
@@ -41,20 +41,20 @@ Once created, navigate to the service account, and click Add Key > - Create New 
 GOOGLE_CREDS = ServiceAccountCredentials.from_json_keyfile_name('google_creds.json', SCOPES)
 ```
 
-## 5. Set up GitHub API
+## Step 5. Set up GitHub API
 
 Replace 'your_github_token' with your GitHub token (personal access token with necessary scopes).
 
-## 6. Set up Google Sheets API:
+## Step 6. Set up Google Sheets API:
 
 - Replace 'your_google_creds.json' with the path to your Google credentials file. Set up Google Sheets API following this guide.
 
-## 7. Create a Google Sheet 
+## Step 7. Create a Google Sheet 
 
 You will need to create a Google Sheet and share it with the email from your Google credentials file.
 
 
-## 8. Run the Script
+## Step 8. Run the Script
 
 ```
 python3 fetch_repo.py
